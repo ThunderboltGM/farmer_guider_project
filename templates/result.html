@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='result.css') }}">
+    <title>OUTPUT</title>
+</head>
+
+<body>
+    <h1 class="main_heading">THANK FOR USING THIS PROJECT</h1>
+    <br>
+    <hr>
+    <h2 class="by_line">ALL CROPS THAT ARE SUITABLE FOR YOU SOIL ARE LISTED BELOW</h2>
+    <br>
+    <div class="result_div">
+        {% for image, label in imagePath %}
+        <div class="image_container">
+            <img src="{{ url_for('static',filename=image) }}" alt="Result Image">
+            <div class="image_label">{{ label }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

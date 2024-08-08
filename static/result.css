@@ -1,0 +1,32 @@
+.main_heading{
+    text-align: center;
+    color: orange;
+}
+.by_line{
+    text-align: center;
+    color: yellowgreen;
+}
+.result_div {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if they don't fit in one row */
+    justify-content: space-around; /* Distributes images evenly with space around them */
+    gap: 20px; /* Adds space between the image containers */
+    margin-top: 20px;
+}
+
+.image_container {
+    text-align: center; /* Centers the label under the image */
+    width: 200px; /* Set a fixed width for each image container */
+}
+
+.image_container img {
+    max-width: 100%; /* Ensures the image fits within its container */
+    height: auto;
+    border-radius: 10px; /* Optional: adds rounded corners to the images */
+}
+
+.image_label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}

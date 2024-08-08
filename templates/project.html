@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='project.css') }}">
+    <title>Farmer Guider Project</title>
+</head>
+<body>
+    <h1 class="main_heading">Farmer Guider Project</h1>
+    <br><hr><br>
+    <div class="form_div">
+        <form action="{{ url_for('cropResult') }}" method="post">
+            <label for="">Nitrogen :</label>
+            <input type="text" name="nitrogen" required>
+            <br><br>
+            <label for="">Phosphorus :</label>
+            <input type="text" name="phosphorus" required>
+            <br><br>
+            <label for="">Pottasium :</label>
+            <input type="text" name="pottasium" required>
+            <br><br>
+            <label for="">Temperature :</label>
+            <input type="text" name="temperature" required>
+            <br><br>
+            <label for="">Humidity :</label>
+            <input type="text" name="humidity" required>
+            <br><br>
+            <label for="">PH :</label>
+            <input type="text" name="ph" required>
+            <br><br>
+            <label for="">Rainfall :</label>
+            <input type="text" name="rainfall" required>
+            <br><br>
+            <button type="submit" id="form_submit">submit</button>
+        </form>
+    </div>
+</body>
+</html>
