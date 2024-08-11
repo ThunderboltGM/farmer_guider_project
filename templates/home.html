@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Farmer Guider</title>
 </head>
 <body>
-    <h1 class="main_heading">WELCOME TO THE PROJECT</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Farmer Guider</div>
+        <ul class="nav-links">
+            <li><a href="http://127.0.0.1:5000">Home</a></li>
+            <li><a href="http://127.0.0.1:5000/contact">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Heading -->
+    <h1 class="main_heading">WELCOME TO THE PORTAL</h1>
     <br><hr><br>
     <button onclick="window.location.href='http://127.0.0.1:5000/project';" id="project_button">GO TO PROJECT</button>
+
+    <!-- About Section -->
+    <section id="about" class="about_section">
+        <h2>About This Project</h2>
+        <p>Farmer Guider is a project aimed at helping farmers with finding out which crop to grow on their field for maximum profit or production. Our platform provides comprehensive solutions for modern farming, empowering farmers to optimize their production and manage their resources efficiently.</p>
+    </section>
 </body>
 </html>
